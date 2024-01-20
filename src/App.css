@@ -6,6 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* border: 1px solid lightblue !important; */
 }
 
 #webGL-container {
@@ -15,4 +16,17 @@
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+*::-webkit-scrollbar {
+  width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+background: #1A1B41;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: #D67AB1;
+border-radius: 13px;
 }

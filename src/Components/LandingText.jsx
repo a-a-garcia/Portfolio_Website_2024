@@ -1,6 +1,6 @@
 const LandingText = () => {
   return (
-    <div className="landing-text text-white w-96 ml-40">
+    <div className="landing-text text-white w-1/2 ml-40">
       <h1 className="text-8xl">
         Hi! My name is{" "}
         <span className="font-bold text-secondaryPink">Anthony A. Garcia.</span>
