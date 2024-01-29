@@ -14,8 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingText />}></Route>
           <Route path="/projects" element={<ProjectsPage />}></Route>
-          <Route path="/about-me" element={<AboutMePage/>}></Route>
-          <Route path="/contact" element={<ContactMe />}></Route>
+          <Route path="#/about-me" element={<AboutMePage/>}></Route>
+          <Route path="#/contact" element={<ContactMe />}></Route>
         </Routes>
       </HashRouter>
     </div>
