@@ -28,7 +28,7 @@ const Nav = () => {
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex flex-shrink-0 items-center">
                     <img
-                      className="md:h-full md:w-auto w-1/2 object-contain"
+                      className="md:h-full md:w-auto w-1/2 object-contain ml-5"
                       src={portfolioIcon}
                       alt="Portfolio Icon"
                     />
