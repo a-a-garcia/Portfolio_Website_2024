@@ -18,7 +18,7 @@ const AboutMePage = () => {
 
   return (
     <div className="flex text-white justify-evenly flex-wrap">
-      <div className="flex flex-col items-center max-w-screen-lg mt-52 sm:mt-40 md:mt-60 aboutMeLeft">
+      <div className="flex flex-col items-center max-w-screen-lg mt-36 sm:mt-40 md:mt-60 aboutMeLeft">
         <h1 className="text-5xl text-secondaryPink -z-10">About Me</h1>
         <div className="p-5 md:text-2xl text-xl shadow-lg rounded-lg opacity-90 bg-primaryPurple mt-10">
           <p className='p-2'>I have always been <span className='text-secondaryPink'>fascinated</span> by the <span className='text-secondaryPink'>dynamics</span> of the internet and its profound <span className='text-secondaryPink'>impact</span> on our technological interactions. This fascination <span className='text-secondaryPink'>propelled</span>  me through my <span className='text-secondaryPink'>previous career</span> as a mortgage professional, where the most exciting part of the job was <span className='text-secondaryPink'>mastering</span> various web applications and software that are <span className='text-secondaryPink'>critical</span> to the seamless lifecycle of mortgage loans.</p>

@@ -78,7 +78,7 @@ const ProjectsPage = () => {
 
   return (
     <div className="flex text-white justify-evenly flex-wrap">
-      <div className="flex flex-col items-center max-w-screen-lg mt-52 sm:mt-40 md:mt-60 projectsPageList">
+      <div className="flex flex-col items-center max-w-screen-lg mt-36 sm:mt-40 md:mt-60 projectsPageList">
         <h1 className="text-5xl text-secondaryPink -z-10">Projects</h1>
         <div className="p-5 shadow-lg rounded-lg opacity-90 bg-primaryPurple mt-10 overflow-y-auto max-h-80">
           {myProjects.map((project, index) => {
