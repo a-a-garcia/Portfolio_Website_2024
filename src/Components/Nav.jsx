@@ -44,7 +44,7 @@ const Nav = () => {
                       <Menu.Button className="relative flex rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125 duration-300">
                         <span className="absolute -inset-1.5" />
                         <span className="sr-only">Open user menu</span>
-                        <i className="fa-solid fa-bars text-7xl text-white"></i>
+                        <i className="fa-solid fa-bars sm:text-7xl text-5xl mr-5 text-white"></i>
                       </Menu.Button>
                     </div>
                     <Transition

@@ -17,7 +17,7 @@ const AboutMePage = () => {
       ]);
 
   return (
-    <div className="flex text-white justify-evenly flex-wrap">
+    <div className="flex text-white justify-evenly flex-wrap mb-60">
       <div className="flex flex-col items-center max-w-screen-lg mt-72 lg:mt-16 aboutMeLeft">
         <h1 className="text-5xl text-secondaryPink -z-10">About Me</h1>
         <div className="p-5 text-2xl leading-10 shadow-lg rounded-lg opacity-90 bg-primaryPurple mt-10">

@@ -94,16 +94,16 @@ const ProjectsPage = () => {
           })}
         </div>
       </div>
-      <div className="flex flex-col max-w-screen-md ">
-        <div className="px-5 pb-10 shadow-lg rounded-lg opacity-90 bg-primaryPurple mt-40 overflow-y-auto max-h-96 projectsPageImages">
+      <div className="flex flex-col max-w-screen-md items-center">
+        <div className="px-5 pb-10 shadow-lg rounded-lg opacity-90 bg-primaryPurple mt-40 overflow-y-auto max-h-96 projectsPageImages w-full">
           {selectedProject.images.map((image, imageIndex) => {
             return (
               <img src={Object.values(image)[0]} className="mt-10" key={imageIndex}></img>
             );
           })}
         </div>
-        <div className="flex flex-col p-5 shadow-lg rounded-lg opacity-90 bg-primaryPurple mt-20 overflow-y-auto xl:mb-10 mb-40 projectsPageText">
-          <div className="flex">
+        <div className="flex flex-col p-5 shadow-lg rounded-lg opacity-90 bg-primaryPurple mt-20 overflow-y-auto mb-60 projectsPageText w-full">
+          <div className="flex flex-col sm:flex-row items-center">
             <h2 className="text-2xl text-secondaryPink p-5">
               {selectedProject.title}
             </h2>
@@ -111,7 +111,7 @@ const ProjectsPage = () => {
               return (
                 <div
                   key={technology}
-                  className="text-lg bg-secondaryPink flex justify-center items-center rounded-full h-1/2 p-5 mx-2 cursor-default transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-400 duration-100"
+                  className="text-lg bg-secondaryPink flex justify-center items-center rounded-full shadow-lg h-1/3 p-3 sm:mx-2 my-2  cursor-default transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-400 duration-100"
                 >
                   {technology}
                 </div>
