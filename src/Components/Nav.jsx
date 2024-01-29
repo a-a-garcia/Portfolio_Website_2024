@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
-import { createPortal } from "react-dom";
+import useCustomTransition from "./customTransition";
 import portfolioIcon from "../assets/portfolio_logo.png";
 
 const Nav = () => {
@@ -9,15 +9,17 @@ const Nav = () => {
     return classes.filter(Boolean).join(" ");
   }
 
+  useCustomTransition(".nav",["transition", "duration-1000", "transform", "translate-y-10"]);
+
   return (
-    <div className="">
+    <div className="nav">
       <Disclosure
         as="nav"
         className="bg-primaryPurple shadow-lg opacity-90 rounded-lg"
       >
         {() => (
           <>
-            <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 m-20 flex-nowrap">
+            <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 m-1 flex-nowrap">
               <div className="relative flex items-center justify-between h-full">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
@@ -39,7 +41,7 @@ const Nav = () => {
                   {/* Profile dropdown */}
                   <Menu as="div" className="relative ml-3 z-50">
                     <div>
-                      <Menu.Button className="relative flex rounded-full">
+                      <Menu.Button className="relative flex rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125 duration-300">
                         <span className="absolute -inset-1.5" />
                         <span className="sr-only">Open user menu</span>
                         <i className="fa-solid fa-bars text-7xl text-white"></i>
@@ -84,7 +86,7 @@ const Nav = () => {
                               <Menu.Item>
                                 {({ active }) => (
                                   <a
-                                    href="#"
+                                    href="/about-me"
                                     className={classNames(
                                       active ? "bg-secondaryPink" : "",
                                       "block p-5 text-2xl text-white"
@@ -97,7 +99,7 @@ const Nav = () => {
                               <Menu.Item>
                                 {({ active }) => (
                                   <a
-                                    href="#"
+                                    href="/contact"
                                     className={classNames(
                                       active ? "bg-secondaryPink" : "",
                                       "block p-5 text-2xl text-white"

@@ -15,7 +15,12 @@ export default {
         borderRadius: '0.375rem',
         padding: '1.25rem',
         backgroundColor: '#1A1B41',
-      }
+      },
+      // keyframes {
+      //   appear: {
+      //     '0%, 100%' : { }
+      //   }
+      // }
     },
   },
   plugins: [],
