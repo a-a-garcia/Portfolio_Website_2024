@@ -28,7 +28,7 @@ const Nav = () => {
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex flex-shrink-0 items-center">
                     <img
-                      className="h-full w-auto object-contain"
+                      className="md:h-full md:w-auto w-1/2 object-contain"
                       src={portfolioIcon}
                       alt="Portfolio Icon"
                     />
@@ -56,14 +56,14 @@ const Nav = () => {
                       leaveFrom="transform opacity-100 scale-100"
                       leaveTo="transform opacity-0 scale-95"
                     >
-                            <Menu.Items className="absolute right-6 sm:top-6 xl:-top-14 xl:-inset-x-52 z-50 mt-2 w-48 origin-top-right rounded-md bg-gray-900 text-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <Menu.Items className="absolute right-6 sm:top-6 xl:-top-14 xl:-inset-x-52 z-50 mt-2 w-48 origin-top-right rounded-md bg-gray-900 text-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none text-xl md:text-2xl">
                               <Menu.Item>
                                 {({ active }) => (
                                   <Link
                                     to="/"
                                     className={classNames(
                                       active ? "bg-secondaryPink" : "",
-                                      "block p-5 text-2xl text-white"
+                                      "block p-3 md:p-5 text-white"
                                     )}
                                   >
                                     01. HOME
@@ -76,7 +76,7 @@ const Nav = () => {
                                     to="/projects"
                                     className={classNames(
                                       active ? "bg-secondaryPink" : "",
-                                      "block p-5 text-2xl text-white"
+                                      "block p-3 md:p-5 text-white"
                                     )}
                                   >
                                     02. PROJECTS
@@ -89,7 +89,7 @@ const Nav = () => {
                                     href="#/about-me"
                                     className={classNames(
                                       active ? "bg-secondaryPink" : "",
-                                      "block p-5 text-2xl text-white"
+                                      "block p-3 md:p-5 text-white"
                                     )}
                                   >
                                     03. ABOUT ME
@@ -102,7 +102,7 @@ const Nav = () => {
                                     href="#/contact"
                                     className={classNames(
                                       active ? "bg-secondaryPink" : "",
-                                      "block p-5 text-2xl text-white"
+                                      "block p-3 md:p-5 text-white"
                                     )}
                                   >
                                     04. CONTACT

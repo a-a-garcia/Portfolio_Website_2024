@@ -78,7 +78,7 @@ const ProjectsPage = () => {
 
   return (
     <div className="flex text-white justify-evenly flex-wrap">
-      <div className="flex flex-col items-center max-w-screen-lg mt-72 lg:mt-16 projectsPageList">
+      <div className="flex flex-col items-center max-w-screen-lg mt-52 sm:mt-40 md:mt-60 projectsPageList">
         <h1 className="text-5xl text-secondaryPink -z-10">Projects</h1>
         <div className="p-5 shadow-lg rounded-lg opacity-90 bg-primaryPurple mt-10 overflow-y-auto max-h-80">
           {myProjects.map((project, index) => {
@@ -95,7 +95,7 @@ const ProjectsPage = () => {
         </div>
       </div>
       <div className="flex flex-col max-w-screen-md items-center">
-        <div className="px-5 pb-10 shadow-lg rounded-lg opacity-90 bg-primaryPurple mt-40 overflow-y-auto max-h-96 projectsPageImages w-full">
+        <div className="px-5 pb-10 shadow-lg rounded-lg opacity-90 bg-primaryPurple mt-20 md:mt-40 overflow-y-auto max-h-96 projectsPageImages w-full">
           {selectedProject.images.map((image, imageIndex) => {
             return (
               <img src={Object.values(image)[0]} className="mt-10" key={imageIndex}></img>
