@@ -86,7 +86,7 @@ const Nav = () => {
                               <Menu.Item>
                                 {({ active }) => (
                                   <a
-                                    href="/about-me"
+                                    href="#/about-me"
                                     className={classNames(
                                       active ? "bg-secondaryPink" : "",
                                       "block p-5 text-2xl text-white"
@@ -99,7 +99,7 @@ const Nav = () => {
                               <Menu.Item>
                                 {({ active }) => (
                                   <a
-                                    href="/contact"
+                                    href="#/contact"
                                     className={classNames(
                                       active ? "bg-secondaryPink" : "",
                                       "block p-5 text-2xl text-white"
